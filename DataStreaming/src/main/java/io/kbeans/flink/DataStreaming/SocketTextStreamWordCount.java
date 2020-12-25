@@ -1,4 +1,4 @@
-package io.kbeans.flink.wordcount;
+package io.kbeans.flink.DataStreaming;
 
 /*
  * Licensed to the Apache Software Foundation (ASF) under one or more

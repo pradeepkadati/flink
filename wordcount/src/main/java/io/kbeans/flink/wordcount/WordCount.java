@@ -77,6 +77,7 @@ public class WordCount {
 	 * FlatMapFunction. The function takes a line (String) and splits it into
 	 * multiple pairs in the form of "(word,1)" (Tuple2<String, Integer>).
 	 */
+	@SuppressWarnings("serial")
 	public static final class LineSplitter implements FlatMapFunction<String, Tuple2<String, Integer>> {
 
 		@Override

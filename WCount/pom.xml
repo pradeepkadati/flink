@@ -21,8 +21,8 @@ under the License.
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>io.kbeans.flink</groupId>
-	<artifactId>wordcount</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>WCount</artifactId>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>Flink Quickstart Job</name>
@@ -213,7 +213,7 @@ under the License.
 							<transformers>
 								<!-- add Main-Class to manifest file -->
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>io.kbeans.flink.wordcount.Job</mainClass>
+									<mainClass>io.kbeans.flink.WCount.WordCountCli</mainClass>
 								</transformer>
 							</transformers>
 							<createDependencyReducedPom>false</createDependencyReducedPom>
@@ -230,7 +230,7 @@ under the License.
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<Main-Class>io.kbeans.flink.wordcount.Job</Main-Class>
+							<Main-Class>io.kbeans.flink.WCount.WordCountCli</Main-Class>
 						</manifestEntries>
 					</archive>
 				</configuration>
